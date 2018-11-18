@@ -22,8 +22,10 @@ public class DemoTDD
     public static boolean isPassed(double grade)
     {
         if (grade >= 5) {
+            System.out.println("aaaaa");
             return true;
         }
         return false;
     }
+    /// second time
 }
