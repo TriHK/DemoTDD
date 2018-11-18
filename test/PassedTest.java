@@ -1,5 +1,5 @@
 
-import demotdd.GradeChecker;
+import demotdd.DemoTDD;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -10,15 +10,15 @@ import static org.junit.Assert.*;
 public class PassedTest
 {
 
-    @Test
+//    @Test
     public void testPassed()
     {
-        assertEquals(false, GradeChecker.isPassed(11));
-        assertEquals(true, GradeChecker.isPassed(10));
-        assertEquals(true, GradeChecker.isPassed(8));
-        assertEquals(true, GradeChecker.isPassed(5));
-        assertEquals(false, GradeChecker.isPassed(4));
-        assertEquals(false, GradeChecker.isPassed(3));
-        assertEquals(false, GradeChecker.isPassed(0));
+        assertEquals(false, DemoTDD.isPassed(11));
+        assertEquals(true, DemoTDD.isPassed(10));
+        assertEquals(true, DemoTDD.isPassed(8));
+        assertEquals(true, DemoTDD.isPassed(5));
+        assertEquals(false, DemoTDD.isPassed(4));
+        assertEquals(false, DemoTDD.isPassed(3));
+        assertEquals(false, DemoTDD.isPassed(0));
     }
 }

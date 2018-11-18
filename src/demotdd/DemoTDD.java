@@ -12,11 +12,18 @@ public class DemoTDD
      */
     public static void main(String[] args)
     {
-        System.out.println(GradeChecker.isPassed(10));
-        System.out.println(GradeChecker.isPassed(8));
-        System.out.println(GradeChecker.isPassed(5));
-        System.out.println(GradeChecker.isPassed(3));
-        System.out.println(GradeChecker.isPassed(0));
+        System.out.println(isPassed(10));
+        System.out.println(isPassed(8));
+        System.out.println(isPassed(5));
+        System.out.println(isPassed(3));
+        System.out.println(isPassed(0));
     }
-    
+
+    public static boolean isPassed(double grade)
+    {
+        if (grade >= 5) {
+            return true;
+        }
+        return false;
+    }
 }
